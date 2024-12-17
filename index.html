@@ -1,85 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Residence Management</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IRoom Services</title>
+  <link rel="icon" type="image/jpeg" href="src/types/logoIR.jpeg" />
+
 </head>
+
 <body>
-    <div id="app">
-        <header class="header">
-            <h1>Student Residence Management</h1>
-            <nav class="main-nav">
-                <button onclick="showSection('rooms')" class="nav-btn">Rooms</button>
-                <button onclick="showSection('residents')" class="nav-btn">Residents</button>
-                <button onclick="showSection('maintenance')" class="nav-btn">Maintenance</button>
-                <button onclick="showSection('payments')" class="nav-btn">Payments</button>
-            </nav>
-        </header>
 
-        <main class="main-content">
-            <!-- Rooms Section -->
-            <section id="rooms" class="section">
-                <h2>Room Management</h2>
-                <div class="room-controls">
-                    <button onclick="showModal('add-room')" class="action-btn">Add Room</button>
-                    <div class="search-box">
-                        <input type="text" id="room-search" placeholder="Search rooms...">
-                    </div>
-                </div>
-                <div id="rooms-list" class="grid-container"></div>
-            </section>
-
-            <!-- Residents Section -->
-            <section id="residents" class="section hidden">
-                <h2>Resident Management</h2>
-                <div class="resident-controls">
-                    <button onclick="showModal('add-resident')" class="action-btn">Add Resident</button>
-                    <div class="search-box">
-                        <input type="text" id="resident-search" placeholder="Search residents...">
-                    </div>
-                </div>
-                <div id="residents-list" class="grid-container"></div>
-            </section>
-
-            <!-- Maintenance Section -->
-            <section id="maintenance" class="section hidden">
-                <h2>Maintenance Requests</h2>
-                <div class="maintenance-controls">
-                    <button onclick="showModal('add-maintenance')" class="action-btn">New Request</button>
-                    <div class="search-box">
-                        <input type="text" id="maintenance-search" placeholder="Search requests...">
-                    </div>
-                </div>
-                <div id="maintenance-list" class="grid-container"></div>
-            </section>
-
-            <!-- Payments Section -->
-            <section id="payments" class="section hidden">
-                <h2>Payment Management</h2>
-                <div class="payment-controls">
-                    <button onclick="showModal('add-payment')" class="action-btn">Record Payment</button>
-                    <div class="search-box">
-                        <input type="text" id="payment-search" placeholder="Search payments...">
-                    </div>
-                </div>
-                <div id="payments-list" class="grid-container"></div>
-            </section>
-        </main>
-    </div>
-
-    <!-- Modals -->
-    <div id="modal-container" class="modal-container hidden">
-        <div class="modal">
-            <div class="modal-header">
-                <h3 id="modal-title">Title</h3>
-                <button onclick="hideModal()" class="close-btn">&times;</button>
-            </div>
-            <div id="modal-content" class="modal-content"></div>
-        </div>
-    </div>
-
-    <script type="module" src="/js/main.js"></script>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
 </body>
+
 </html>
