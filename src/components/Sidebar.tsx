@@ -1,17 +1,18 @@
 
-import { Home, Users, CreditCard, Settings, BarChart, Bell, BadgePlus, CircleDollarSign } from 'lucide-react';
+import { Home, Users, Send, CreditCard, Settings, BarChart, Bell, BadgePlus, CircleDollarSign } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 
 
 const menuItems = [
+  { icon: BarChart, label: 'Acceuille', path: '/acceuille' },
   { icon: Home, label: 'Chambres', path: '/Room' },
   { icon: Users, label: 'Résidents', path: '/residents' },
   { icon: CreditCard, label: 'Historique Paiements', path: '/payments' },
   { icon: CircleDollarSign, label: 'Paiements Resident', path: '/paiments' },
   { icon: Bell, label: 'Help Desk', path: '/tickets' },
   { icon: BadgePlus, label: 'Créer Incident', path: '/incident' },
-  { icon: BarChart, label: 'Statistiques', path: '/statistique' },
-  { icon: Settings, label: 'Profile', path: '/Profile' },
+  { icon: Send, label: 'Contact', path: '/contact' },
+  { icon: Settings, label: 'Profile', path: '/profile' },
 
 ];
 

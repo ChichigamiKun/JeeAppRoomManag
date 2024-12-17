@@ -1,7 +1,7 @@
 import DashboardCard from '../components/DashboardCard';
 import { Building, Users } from 'lucide-react';
 
-export default function StatistiquePage() {
+export default function TableauDeBord() {
     return (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             <DashboardCard
