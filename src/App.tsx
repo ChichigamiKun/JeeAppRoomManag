@@ -11,7 +11,8 @@ import TableauDeBord from './pages/TableauDeBord';
 import LoginPage from './LoginPage';
 import ContactPage from './pages/contact';
 import ProfilePage from './pages/Profile';
-
+import Statistics from './pages/Statistics';
+// import { useRouter } from 'next/router';
 
 function App() {
   return (
@@ -30,13 +31,16 @@ function App() {
                       <Route path="/room" element={<RoomsPage />} />
                       <Route path="/residents" element={<ResidentsPage />} />
                       <Route path="/payments" element={<PaymentsAdminPage />} />
-                      <Route path="/payments-resident" element={<PaymentsResidentPage />} />
+                      <Route path="/paiments" element={<PaymentsResidentPage />} />
                       <Route path="/maintenance" element={<MaintenancePage />} />
                       <Route path="/tickets" element={<TicketsPage />} />
                       <Route path="/incident" element={<IncidentPage />} />
                       <Route path="/acceuille" element={<TableauDeBord />} />
                       <Route path="/contact" element={<ContactPage />} />
                       <Route path="/profile" element={<ProfilePage />} />
+                      <Route path="/statistique" element={<Statistics />} />
+
+                      
 
                       
                     </Routes>

@@ -1,8 +1,8 @@
 export interface Room {
   id: string;
   number: string;
-  size: number;
   status: 'available' | 'occupied' | 'maintenance';
+  size: number;
   equipment: string[];
 }
 

@@ -18,7 +18,7 @@ export default function Incidents() {
                             id="roomNumber"
                             name="roomNumber"
                             type="number"
-                            placeholder="101"
+                            placeholder="Ex: 101"
                             className="mt-1 w-full p-3 rounded-md border-gray-600 focus:ring-indigo-500 focus:border-indigo-500 shadow-lg"
                         />
                     </div>
