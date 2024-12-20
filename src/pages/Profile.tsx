@@ -1,5 +1,6 @@
 import { Image } from "lucide-react";
 
+
 export default function ProfilePage() {
 
 
@@ -8,7 +9,7 @@ export default function ProfilePage() {
             <div className="max-w-4xl mx-auto bg-white shadow-xl rounded-t-3xl">
                 {/* Header */}
                 <div className="border-b p-6 bg-gray-50 rounded-t-3xl">
-                    <h2 className="text-2xl font-semibold text-gray-800">Paramtre du Profile</h2>
+                    <h2 className="text-2xl font-semibold text-gray-800">Paramétre du Profile</h2>
                     <p className="text-sm text-gray-500">Mes informations Personelles</p>
                 </div>
 
@@ -47,7 +48,7 @@ export default function ProfilePage() {
                                     id="firstName"
                                     name="firstName"
                                     placeholder="John"
-                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                    className="mt-1 block w-full p-3 rounded-md border-gray-300 shadow-xl focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                                 />
                             </div>
 
@@ -61,7 +62,7 @@ export default function ProfilePage() {
                                     id="lastName"
                                     name="lastName"
                                     placeholder="Doe"
-                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                    className="mt-1 block w-full p-3 rounded-md border-gray-300 shadow-xl focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                                 />
                             </div>
                         </div>
@@ -81,7 +82,7 @@ export default function ProfilePage() {
                                     id="email"
                                     name="email"
                                     placeholder="you@example.com"
-                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                    className="mt-1 block w-full p-3 rounded-md border-gray-300 shadow-xl focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                                 />
                             </div>
 
@@ -95,7 +96,7 @@ export default function ProfilePage() {
                                     id="phone"
                                     name="phone"
                                     placeholder="+123 456 7890"
-                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                    className="mt-1 block w-full p-3 rounded-md border-gray-300 shadow-xl focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                                 />
                             </div>
                         </div>
@@ -115,7 +116,7 @@ export default function ProfilePage() {
                                     id="street"
                                     name="street"
                                     placeholder="123 Main St"
-                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                    className="mt-1 block w-full p-3 rounded-md border-gray-300 shadow-xl focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                                 />
                             </div>
 
@@ -129,7 +130,7 @@ export default function ProfilePage() {
                                     id="city"
                                     name="city"
                                     placeholder="City"
-                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                    className="mt-1 block w-full p-3 rounded-md border-gray-300 shadow-xl focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                                 />
                             </div>
 
@@ -143,7 +144,7 @@ export default function ProfilePage() {
                                     id="state"
                                     name="state"
                                     placeholder="State"
-                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                    className="mt-1 block w-full p-3 rounded-md border-gray-300 shadow-xl focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                                 />
                             </div>
 
@@ -157,7 +158,7 @@ export default function ProfilePage() {
                                     id="zip"
                                     name="zip"
                                     placeholder="12345"
-                                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                                    className="mt-1 block w-full p-3 rounded-md border-gray-300 shadow-xl focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                                 />
                             </div>
                         </div>
