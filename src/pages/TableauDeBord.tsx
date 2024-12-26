@@ -1,19 +1,6 @@
-import {
-    BarChart,
-    Bar,
-    XAxis,
-    YAxis,
-    CartesianGrid,
-    Tooltip,
-    ResponsiveContainer,
-} from 'recharts';
+
 import { Home, AlertTriangle, BanknoteIcon } from 'lucide-react';
 
-const data = [
-    { month: 'Jan', occupancy: 85, payments: 95, incidents: 12 },
-    { month: 'Fév', occupancy: 88, payments: 92, incidents: 8 },
-    { month: 'Mar', occupancy: 90, payments: 97, incidents: 15 },
-];
 
 const StatCard = ({ icon: Icon, title, value, color }: any) => (
     <div className="bg-white p-6 rounded-lg shadow-md">
@@ -34,7 +21,7 @@ const Dashboard = () => {
         <div className="space-y-6">
             <h1 className="text-2xl font-bold">Tableau de bord</h1>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-auto">
                 <StatCard
                     icon={Home}
                     title="Taux d'occupation"
@@ -61,21 +48,9 @@ const Dashboard = () => {
                 />
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md">
-                <h2 className="text-xl font-semibold mb-4">Tendances</h2>
-                <div className="h-80">
-                    <ResponsiveContainer width="100%" height="100%">
-                        <BarChart data={data}>
-                            <CartesianGrid strokeDasharray="3 3" />
-                            <XAxis dataKey="month" />
-                            <YAxis />
-                            <Tooltip />
-                            <Bar dataKey="occupancy" fill="#3B82F6" name="Occupation" />
-                            <Bar dataKey="payments" fill="#10B981" name="Paiements" />
-                            <Bar dataKey="incidents" fill="#EF4444" name="Incidents" />
-                        </BarChart>
-                    </ResponsiveContainer>
-                </div>
+            <div className="bg-white m-12 p-6 rounded-lg shadow-md">
+                <h2 className="text-xl font-semibold mb-4">Plan des étages</h2>
+                <img src="src/types/2D.jpg" alt="" className='w-fit m-auto'/>
             </div>
         </div>
     );

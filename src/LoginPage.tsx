@@ -1,7 +1,8 @@
 export default function LoginPage() {
   return (
-    <div className="bg-gradient-to-br from-blue-950 to-blue-800 min-h-screen flex items-center justify-center">
-      <div className="max-w-xl w-full p-8 bg-slate-100 rounded-3xl shadow-[0_20px_30px_rgba(135,206,235,0.5)]">
+    <div className="bg-gradient-to-br from-white-950 to-blue-800 min-h-screen flex items-center">
+      <img src="src/types/11.jpg" alt="" className="max w-3/6 h-screen" />
+      <div className="max-w-l m-auto w-auto p-8 bg-slate-100 rounded-3xl shadow-[0_20px_30px_rgba(0,0,255,0.5)]">
         <img
           src="src/types/logoIR.jpeg"
           alt="logo"
@@ -13,7 +14,7 @@ export default function LoginPage() {
 
         <form className="space-y-6">
           <div>
-            <label className="text-gray-600 text-sm font-medium block mb-2">
+            <label className="text-gray-600 text-sm font-medium block mb-2"> 
               Adresse Email
             </label>
             <input

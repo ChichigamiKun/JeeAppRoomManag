@@ -2,6 +2,7 @@
 export default function Incidents() {
     return (
         <div className="min-h-screen bg-gray-100 flex items-center justify-center p-6">
+
             <div className="w-full max-w-4xl bg-white rounded-lg shadow-md p-8">
                 {/* Header */}
                 <h2 className="text-3xl font-bold text-gray-800 mb-6 border-b pb-4">
