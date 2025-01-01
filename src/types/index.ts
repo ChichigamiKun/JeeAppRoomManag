@@ -23,3 +23,4 @@ export interface Incident {
   status: 'pending' | 'inProgress' | 'resolved';
   createdAt: string;
 }
+
