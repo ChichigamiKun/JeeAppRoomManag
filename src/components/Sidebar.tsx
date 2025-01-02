@@ -4,7 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 
 const menuItems = [
-  { icon: LayoutDashboard, label: 'Acceuille', path: '/acceuille' },
+  { icon: LayoutDashboard, label: 'Accueil', path: '/accueil' },
   { icon: Home, label: 'Chambres', path: '/Room' },
   { icon: Users, label: 'Résidents', path: '/residents' },
   { icon: CreditCard, label: 'Historique Paiements', path: '/payments' },

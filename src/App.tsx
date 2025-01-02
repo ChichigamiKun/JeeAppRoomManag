@@ -35,14 +35,14 @@ function App() {
                       <Route path="/maintenance" element={<MaintenancePage />} />
                       <Route path="/tickets" element={<TicketsPage />} />
                       <Route path="/incident" element={<IncidentPage />} />
-                      <Route path="/acceuille" element={<TableauDeBord />} />
+                      <Route path="/accueil" element={<TableauDeBord />} />
                       <Route path="/contact" element={<ContactPage />} />
                       <Route path="/profile" element={<ProfilePage />} />
                       <Route path="/statistique" element={<Statistics />} />
 
-                      
 
-                      
+
+
                     </Routes>
                   </main>
                 </div>
