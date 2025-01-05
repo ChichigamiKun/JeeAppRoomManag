@@ -7,9 +7,6 @@ interface LoginRequest {
   password: string;
 }
 
-interface AuthResponse {
-  token: string;
-}
 
 export default function LoginPage() {
   // Déclarations des états
@@ -20,17 +17,17 @@ export default function LoginPage() {
   // Gestionnaire de soumission du formulaire
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
 
-    const loginData: LoginRequest = { email, password };
+    const loginData: LoginRequest = { email: email, password: password };
 
     try {
-      const response = await axios.post<AuthResponse>(
-        'http://localhost:8081/api/auth/login',
+      const response = await axios.post('http://localhost:8081/api/auth/login',
         loginData
       );
       localStorage.setItem('jwt', response.data.token);
       alert('Connexion réussie !');
-      window.location.href = '/dashboard'; // Redirection
+      window.location.href = '/accueil'; // Redirection
     } catch (err: any) {
       if (err.response?.status === 401) {
         setError('Identifiants invalides');
