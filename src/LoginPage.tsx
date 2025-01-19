@@ -92,7 +92,7 @@ export default function LoginPage() {
             type="submit"
             className="w-full py-3 px-6 text-base font-semibold rounded-lg text-white bg-blue-600 hover:bg-blue-700 shadow-md focus:outline-none focus:ring-4 focus:ring-blue-500"
           >
-            Connexion
+            <a href='/accueil'>Connexion</a>
           </button>
         </form>
 
